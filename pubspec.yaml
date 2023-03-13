@@ -1,0 +1,52 @@
+name: open_fashion
+description: Open fashion
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  
+  # Core
+  isar: ^3.0.0
+  isar_flutter_libs: ^3.0.0
+  get_it: ^7.2.0
+  uuid: ^3.0.6
+  json_serializable: ^6.3.1
+  cupertino_icons: ^1.0.5
+  retrofit: ^4.0.1
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  intl: ^0.17.0
+  path_provider: ^2.0.11
+  get: ^4.6.5
+  permission_handler: ^9.0.2
+
+  # UI
+  flutter_screenutil: ^5.5.4
+
+dev_dependencies:
+
+  retrofit_generator: any
+  isar_generator: any
+  build_runner: any
+
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/logos/
+    - assets/icons/
+  fonts:
+    - family: Tenor-Sans-Regular
+      fonts:
+        - asset: assets/fonts/tenor_sans_regular.ttf
+          weight: 400
