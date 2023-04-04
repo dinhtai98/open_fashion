@@ -15,4 +15,10 @@ class AppText {
   static const lblDone = 'Done';
   static const lblContinueAnyway = 'Continue anyway';
   static const lblSubmit = 'Submit';
+  static const lblEveryday = 'Everyday';
+  static const lblAbout = 'About';
+  static const lblContact = 'Contact';
+  static const lblBlog = 'Blog';
+  static const lblCopyrightAllRightsReserved =
+      'Copyright© DT All Rights Reserved.';
 }
