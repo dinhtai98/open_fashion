@@ -27,6 +27,8 @@ dependencies:
 
   # UI
   flutter_screenutil: ^5.5.4
+  flutter_native_splash: ^2.2.9
+  flutter_launcher_icons: ^0.11.0
 
 dev_dependencies:
 
@@ -50,3 +52,26 @@ flutter:
       fonts:
         - asset: assets/fonts/tenor_sans_regular.ttf
           weight: 400
+          
+# flutter_native_splash-production.yaml
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logos/logo.png
+  # branding: assets/logos/logo.png
+  color_dark: "#121212"
+  image_dark: assets/logos/logo_light.png
+  # branding_dark: assets/logos/logo.png
+
+  android_12:
+    image: assets/logos/logo.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/logos/logo_light.png
+    icon_background_color_dark: "#121212"
+
+  web: false
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logos/logo.png"
+  min_sdk_android: 21
