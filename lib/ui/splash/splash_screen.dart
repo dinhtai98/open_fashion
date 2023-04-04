@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:open_fashion/global/app_text.dart';
-import 'package:open_fashion/utils/color_utils.dart';
 import 'package:open_fashion/utils/custom_button.dart';
-import 'package:open_fashion/utils/text_style_utils.dart';
+import 'package:open_fashion/utils/image_name_utils.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -14,31 +14,38 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: CustomButton(
-        onPressed: () {},
-        btnColor: ColorUtils.transparent,
-        borderColor: ColorUtils.offWhite,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assets/icons/plus_light.png',
-              height: 25,
-              width: 25,
-            ),
-            Text(
-              AppText.lblSubmit,
-              style: TextStyleUtils.subTitle16()
-                  .copyWith(color: ColorUtils.offWhite),
-            ),
-            Image.asset(
-              'assets/icons/shopping_bag_light.png',
-              height: 25,
-              width: 25,
-            )
-          ],
+    var theme = Theme.of(context);
+    return Container(
+      color: Theme.of(context).backgroundColor,
+      child: Center(
+        child: CustomButton(
+          onPressed: () {
+            if (Get.theme.brightness == Brightness.light) {
+              Get.changeThemeMode(ThemeMode.dark);
+            } else {
+              Get.changeThemeMode(ThemeMode.light);
+            }
+          },
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(
+                ImageNameUtils.plus,
+                height: 25,
+                width: 25,
+              ),
+              Text(
+                AppText.lblSubmit,
+                style: theme.textTheme.titleLarge,
+              ),
+              Image.asset(
+                ImageNameUtils.shoppingBag,
+                height: 25,
+                width: 25,
+              )
+            ],
+          ),
         ),
       ),
     );
