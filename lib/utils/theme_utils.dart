@@ -29,11 +29,14 @@ ThemeData lightTheme = ThemeData(
     foregroundColor: Colors.white,
   ),
   appBarTheme: AppBarTheme(
-    elevation: 0,
-    backgroundColor: ColorUtils.transparent,
+    elevation: 1,
+    backgroundColor: ColorUtils.inputBackground,
     iconTheme: IconThemeData(color: ColorUtils.titleActive),
     foregroundColor: ColorUtils.transparent,
+    shape:
+        Border(bottom: BorderSide(color: ColorUtils.inputBackground, width: 1)),
   ),
+  
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -84,11 +87,11 @@ ThemeData darkTheme = ThemeData(
     foregroundColor: Colors.white,
   ),
   appBarTheme: AppBarTheme(
-    elevation: 0,
-    backgroundColor: ColorUtils.transparent,
-    iconTheme: IconThemeData(color: ColorUtils.titleActive),
-    foregroundColor: ColorUtils.transparent,
-  ),
+      elevation: 0,
+      backgroundColor: ColorUtils.transparent,
+      iconTheme: IconThemeData(color: ColorUtils.titleActive),
+      foregroundColor: ColorUtils.transparent,
+      shape: Border(bottom: BorderSide(color: ColorUtils.offWhite, width: 1))),
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
