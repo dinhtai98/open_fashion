@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:open_fashion/global/app_text.dart';
-import 'package:open_fashion/ui/common_ui/footer.dart';
+import 'package:open_fashion/ui/common_ui/header.dart';
 import 'package:open_fashion/utils/custom_button.dart';
 import 'package:open_fashion/utils/image_name_utils.dart';
 
@@ -50,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ],
               ),
             ),
-            const Footer(),
+            const Header(),
           ],
         ),
       ),

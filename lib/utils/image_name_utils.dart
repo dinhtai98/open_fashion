@@ -20,4 +20,10 @@ class ImageNameUtils {
   static String get divider => isLightMode
       ? 'assets/icons/divider.png'
       : 'assets/icons/divider_light.png';
+  static String get menu =>
+      isLightMode ? 'assets/icons/menu.png' : 'assets/icons/menu_light.png';
+  static String get logo =>
+      isLightMode ? 'assets/logos/logo.png' : 'assets/logos/logo_light.png';
+  static String get search =>
+      isLightMode ? 'assets/icons/search.png' : 'assets/icons/search_light.png';
 }
