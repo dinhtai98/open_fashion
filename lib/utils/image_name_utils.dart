@@ -26,4 +26,8 @@ class ImageNameUtils {
       isLightMode ? 'assets/logos/logo.png' : 'assets/logos/logo_light.png';
   static String get search =>
       isLightMode ? 'assets/icons/search.png' : 'assets/icons/search_light.png';
+  static String get star =>
+      isLightMode ? 'assets/icons/star1.png' : 'assets/icons/star1.png';
+  static String get favoriteOutLine =>
+      isLightMode ? 'assets/icons/heart.png' : 'assets/icons/heart.png';
 }

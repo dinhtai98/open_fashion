@@ -51,9 +51,10 @@ class ColorUtils {
   static Color line = const Color(0xFFE0CFBA);
   static Color inputBackground = const Color(0xFFD9DBE9);
   static Color background = const Color(0xFFF8F0E7);
-  static Color dartBackground = const Color.fromARGB(255, 0, 0, 0);
+  static Color dartBackground = const Color.fromARGB(255, 63, 63, 63);
   static Color offWhite = const Color(0xFFD9DBE9);
   static Color primary = const Color(0xFFA8715A);
   static Color secondary = const Color(0xFFDD8560);
   static Color transparent = Colors.transparent;
+  static Color white = const Color.fromARGB(255, 255, 255, 255);
 }

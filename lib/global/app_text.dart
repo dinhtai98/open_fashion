@@ -21,4 +21,6 @@ class AppText {
   static const lblBlog = 'Blog';
   static const lblCopyrightAllRightsReserved =
       'Copyright© DT All Rights Reserved.';
+  static const lblRatings = 'Ratings';
+  static const lblSize = 'Size';
 }
