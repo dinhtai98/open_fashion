@@ -15,6 +15,9 @@ ThemeData lightTheme = ThemeData(
         TextStyleUtils.bodyMedium().copyWith(color: ColorUtils.titleActive),
     bodySmall:
         TextStyleUtils.bodySmall().copyWith(color: ColorUtils.titleActive),
+    labelLarge: TextStyleUtils.bodyLarge().copyWith(color: ColorUtils.lable),
+    labelMedium: TextStyleUtils.bodyMedium().copyWith(color: ColorUtils.lable),
+    labelSmall: TextStyleUtils.bodySmall().copyWith(color: ColorUtils.lable),
   ).copyWith(
     subtitle1:
         TextStyleUtils.subTitle16().copyWith(color: ColorUtils.titleActive),
@@ -36,7 +39,6 @@ ThemeData lightTheme = ThemeData(
     shape:
         Border(bottom: BorderSide(color: ColorUtils.inputBackground, width: 1)),
   ),
-  
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -74,6 +76,10 @@ ThemeData darkTheme = ThemeData(
     bodyMedium:
         TextStyleUtils.bodyMedium().copyWith(color: ColorUtils.offWhite),
     bodySmall: TextStyleUtils.bodySmall().copyWith(color: ColorUtils.offWhite),
+    labelLarge: TextStyleUtils.bodyLarge().copyWith(color: ColorUtils.offWhite),
+    labelMedium:
+        TextStyleUtils.bodyMedium().copyWith(color: ColorUtils.offWhite),
+    labelSmall: TextStyleUtils.bodySmall().copyWith(color: ColorUtils.offWhite),
   ).copyWith(
     subtitle1: TextStyleUtils.subTitle16().copyWith(color: ColorUtils.offWhite),
     subtitle2: TextStyleUtils.subTitle14().copyWith(color: ColorUtils.offWhite),
